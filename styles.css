@@ -1,10 +1,85 @@
-body{
-    background-image: url('canva\ stars.png');
-}
-.card {
-    background-color: rgba(47, 47, 47, 0.1);
-    
-}
-    .rick-font {
-      font-family: 'Luckiest Guy', cursive;
-    }
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     height: 100vh;
+     overflow-x: hidden;
+     scroll-padding-top: 8em;
+     scroll-behavior: smooth;
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+ }
+
+ .col-about {
+     border: 1px solid rgb(236, 134, 151);
+ }
+
+ .card {
+     background-color: rgba(47, 47, 47, 0.1);
+ }
+
+ .about-text {
+     text-align: justify;
+ }
+
+ .home-text1,
+ .about-text1 {
+     color: rgb(247, 82, 110);
+ }
+
+ .home {
+     background-image: url('images/food-bg3.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .blur-bg {
+     position: absolute;
+     inset: 0;
+     backdrop-filter: blur(5px);
+     background-color: rgba(207, 207, 207, 0.15);
+     z-index: 1;
+ }
+
+ .nav-link {
+     color: #2c3e50;
+     font-weight: 700;
+ }
+
+ .rick-font {
+     font-family: 'Luckiest Guy', cursive;
+ }
+
+ .home-container {
+     margin-top: 8em;
+ }
+
+ .meal_home {
+     animation: spin 20s linear infinite;
+     transform-origin: center center;
+     display: inline-block;
+ }
+
+ @keyframes spin {
+     from {
+         transform: rotate(0deg);
+     }
+
+     to {
+         transform: rotate(360deg);
+     }
+ }
+
+ @media (max-width: 992px) {
+
+     .home-text {
+         text-align: center !important;
+         /* margin-top: 1em; */
+     }
+
+ }
