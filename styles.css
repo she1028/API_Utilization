@@ -1,0 +1,10 @@
+body{
+    background-image: url('canva\ stars.png');
+}
+.card {
+    background-color: rgba(47, 47, 47, 0.1);
+    
+}
+    .rick-font {
+      font-family: 'Luckiest Guy', cursive;
+    }
