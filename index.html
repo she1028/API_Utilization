@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 
 
     <link rel="icon" href="images/logo.png">
@@ -30,8 +32,8 @@
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#category">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="search.html">Recipes</a></li>
                 </ul>
             </div>
         </div>
@@ -49,10 +51,10 @@
                     </div>
 
                     <div class="col-lg-6 my-auto text-center text-lg-start">
-                        <div class="display-3 fw-bold home-text1 home-text" style="font-family: Montserrat;">
+                        <div class="display-3 fw-bold home-text1 home-text">
                             Explore Delicious Recipes
                         </div>
-                        <div class="fs-5 home-text2 home-text text-mute">
+                        <div class="fs-5 home-text2 home-text" style="font-family: sans-serif;">
                             Explore a world of delicious recipes, from quick weeknight meals to gourmet dishes that
                             impress.
                             Discover new flavors from around the globe, learn helpful cooking tips and techniques, and
@@ -74,56 +76,97 @@
         <div class="container about-text my-5 p-4 px-5 border mx-auto shadow">
             <div class="display-4 about-text1 fw-bold">About ReciMeals</div>
             <p><b class="fs-3">Explore Delicious Recipes by Category</b><br><br>
-            <div class="row text-center d-flex justify-content-center g-5">
-                <div class="col-about col-lg-3 col-12 p-3 mx-4 rounded-3">
+            <div class="row text-center d-flex justify-content-center">
+                <div class="col-about col-lg-3 col-12 p-3 mx-4 rounded-3 mb-5">
                     <b>Breakfast:</b> Start your day with energizing and delicious breakfast ideas, from quick smoothies
                     and granola bowls to
                     hearty omelets and pancakes. Discover recipes that fuel your mornings while delighting your taste
                     buds.<br>
                 </div>
 
-                <div class="col-about col-lg-3 col-12 p-3 mx-4 rounded-3">
+                <div class="col-about col-lg-3 col-12 p-3 mx-4 rounded-3 mb-5">
                     <b>Lunch & Dinner:</b> Find inspiration for every meal with easy weeknight dinners, family-friendly
                     lunches, and gourmet dishes
                     for special occasions. Learn new flavors, experiment with global cuisines, and create balanced meals
                     that satisfy everyone at the table.<br>
                 </div>
 
-                <div class="col-about col-lg-3 col-12 p-3 mx-4 rounded-3">
+                <div class="col-about col-lg-3 col-12 p-3 mx-4 rounded-3 mb-5">
                     <b>Desserts & Snacks:</b>
                     Indulge in sweet treats and savory snacks, from decadent cakes and cookies to healthy bites and
                     appetizers. Perfect for parties, celebrations, or simply satisfying your cravings.<br>
                 </div>
+                <div id="extraColumns" class="d-none row justify-content-center p-0">
+                    <div class="col-about col-lg-3 col-12 p-3 rounded-3 mb-5 mx-4">
+                        <b>Vegan & Vegetarian:</b>
+                        Explore plant-based recipes that are full of flavor and nutrition. From vibrant salads and
+                        hearty
+                        stews
+                        to creative mains, discover dishes that make healthy eating exciting and satisfying.<br>
+                    </div>
 
-                <div class="col-about col-lg-3 col-12 p-3 mx-4 rounded-3">
-                    <b>Vegan & Vegetarian:</b>
-                    Explore plant-based recipes that are full of flavor and nutrition. From vibrant salads and hearty
-                    stews
-                    to creative mains, discover dishes that make healthy eating exciting and satisfying.<br>
-                </div>
+                    <div class="col-about col-lg-3 col-12 p-3 rounded-3 mb-5 mx-4">
+                        <b>Quick & Easy:</b>
+                        For busy days, enjoy a collection of fast, simple, and delicious recipes that come together in
+                        under
+                        30
+                        minutes. Perfect for those who want homemade meals without spending hours in the kitchen.<br>
+                    </div>
 
-                <div class="col-about col-lg-3 col-12 p-3 mx-4 rounded-3">
-                    <b>Quick & Easy:</b>
-                    For busy days, enjoy a collection of fast, simple, and delicious recipes that come together in under
-                    30
-                    minutes. Perfect for those who want homemade meals without spending hours in the kitchen.<br>
-                </div>
-
-                <div class="col-about col-lg-3 col-12 p-3 mx-4 rounded-3">
-                    <b>Tips & Techniques:</b>
-                    Learn helpful cooking tips, ingredient guides, and techniques to elevate your meals. Whether you’re
-                    a
-                    beginner or a seasoned chef, gain confidence in the kitchen and make every meal enjoyable.<br>
-                </div>
-                <div class="mt-5">
-                    With our wide variety of recipes, discover new flavors, bring your culinary ideas to life, and
-                    create
-                    memorable dining experiences for yourself and your loved ones. Cooking has never been this inspiring
-                    and
-                    fun!</p>
+                    <div class="col-about col-lg-3 col-12 p-3 rounded-3 mb-5 mx-4">
+                        <b>Tips & Techniques:</b>
+                        Learn helpful cooking tips, ingredient guides, and techniques to elevate your meals. Whether
+                        you’re
+                        a
+                        beginner or a seasoned chef, gain confidence in the kitchen and make every meal enjoyable.<br>
+                    </div>
+                    <div class="mb-5">
+                        <p>
+                            With our wide variety of recipes, discover new flavors, bring your culinary ideas to life,
+                            and
+                            create
+                            memorable dining experiences for yourself and your loved ones. Cooking has never been this
+                            inspiring
+                            and
+                            fun!</p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Show/Hide Button -->
+            <div class="text-center">
+                <button onclick="hideAndShow()" id="show-hide-button"
+                    class="btn btn-sm rounded-5 px-4 ms-3 btn-warning text-black shadow-sm">Read More</button>
+            </div>
         </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="category" style="margin-top: 100px;">
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="display-3 fw-bold home-text1 home-text text-center" style="font-family: Poppins;">
+                        Food Categories </div>
+                </div>
+            </div>
+            <div class="row mx-auto text-center justify-content-center text-dark mb-3">
+                <div class="col-lg-7 col-11">
+                    <small>Discover a variety of food categories, from hearty meats
+                        and fresh seafood to delicious desserts
+                        and plant-based dishes. Explore, taste, and get inspired for every meal!</small>
+                </div>
+            </div>
+
+            <div class="scroll-container">
+                <div class="scroll-content" id="foodCategory"></div>
+            </div>
+        </div>
+        
+        <div class="container-fluid my-5">
+            <div class="row text-center">
+        
+       <a href="gallery.html" class="px-3" >Visit Gallery</a></div></div>
     </section>
 
     <!-- FOOTER SECTION -->
@@ -150,6 +193,49 @@
                     </div>
                 </div>
     </section>
+
+    <script>
+        // Hide and Show Function
+
+        function hideAndShow() {
+            const extraColumns = document.getElementById('extraColumns');
+            const button = document.getElementById('show-hide-button');
+
+            if (extraColumns.classList.contains('d-none')) {
+                extraColumns.classList.remove('d-none'); // show
+                button.textContent = 'Hide';
+            } else {
+                extraColumns.classList.add('d-none'); // hide
+                button.textContent = 'Show';
+            }
+        }
+
+
+
+        // Gallery Images Population
+        const categories = [
+            { category: "Seafood", thumb: "images/seafood.png" },
+            { category: "Beef", thumb: "images/beef.png" },
+            { category: "Chicken", thumb: "images/chicken.png" },
+            { category: "Dessert", thumb: "images/dessert.png" },
+            { category: "Lamb", thumb: "images/lamb.png" },
+            { category: "Starter", thumb: "images/starter.png" },
+            { category: "Pasta", thumb: "images/pasta.png" },
+            { category: "Vegan", thumb: "images/vegan.png" },
+        ];
+        const foodCategory = document.getElementById("foodCategory");
+
+        function populateImages() {
+            const fullList = [...categories, ...categories, ...categories, ...categories, ...categories];
+            fullList.forEach(cat => {
+                const imgDiv = document.createElement('div');
+                imgDiv.innerHTML = `<img src="` + cat.thumb + `" alt="` + cat.category + `" class="foodImg">`;
+                foodCategory.appendChild(imgDiv);
+            });
+        }
+
+        populateImages();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
