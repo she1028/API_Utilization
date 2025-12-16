@@ -10,8 +10,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="styles.css">
@@ -162,11 +161,14 @@
                 <div class="scroll-content" id="foodCategory"></div>
             </div>
         </div>
-        
+
         <div class="container-fluid my-5">
-            <div class="row text-center">
-        
-       <a href="gallery.html" class="px-3" >Visit Gallery</a></div></div>
+            <div class="row text-center d-flex justify-content-center">
+                <div class="col-md-4 col-10">
+                    <a href="search.html" class="index-search-button rounded-5 px-3 py-2">Search Recipes</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER SECTION -->
@@ -174,21 +176,38 @@
         <div class="container-fluid h-50 p-2 m-0" style="background-color: rgb(17, 17, 17);">
             <div class="row mx-5 g-5 text-center justify-content-center align-items-center py-3">
 
-                <div class="col-lg-4 col-11">
-                    <div class="fs-3 text-light fw-bold">Explore</div>
-                    <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
-                        <li><a class="nav-link" aria-current="page" href="">About Articles</a></li>
-                        <li><a class="nav-link" aria-current="page" href="">Gallery</a></li>
-                        <li><a class="nav-link" aria-current="page" href="">Recipes</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-11">
-                    <img src="images/logo.png" class="w-25">
-                    <div class="text-light text-left">
-                        <div>
-                            <hr class="mx-5" style="border: 1px solid white;">
-                            <div class="text-center pb-3" style="color: #676767;">&copy; 2025 Shella May Cuenca | All
-                                rights reserved.</div>
+                <div class="col-lg-3 col-11">
+                    <div class="fs-3 fw-bold" style="color: plum;">Connect with me</div>
+
+                    <a href="https://github.com/she1028" class="nav-link1 fs-4 mx-2">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="mailto:shellamaycuenca12@email.com" class="nav-link1 fs-4 mx-2">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                    <a href="https://t.me/@She2804" class="nav-link1 fs-4 mx-2">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    </div>
+                    <div class="col-lg-4 col-11">
+                        <div class="fs-3 fw-bold" style="color: plum;">Explore</div>
+                        <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                            <li><a class="nav-link1" aria-current="page" href="#home">Home</a></li>
+                            <li><a class="nav-link1" aria-current="page" href="search.html">Recipes</a></li>
+                            <li><a class="nav-link1" aria-current="page" href="#about">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-11">
+                        <img src="images/Main_logo.png" class="w-25">
+                        <div class="text-light text-left">
+                            <div>
+                                <hr class="mx-5" style="border: 1px solid white;">
+                                <div class="text-center pb-3" style="color: #676767;">&copy; 2025 Shella May Cuenca |
+                                    All
+                                    rights reserved.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,7 +215,6 @@
 
     <script>
         // Hide and Show Function
-
         function hideAndShow() {
             const extraColumns = document.getElementById('extraColumns');
             const button = document.getElementById('show-hide-button');
@@ -206,13 +224,11 @@
                 button.textContent = 'Hide';
             } else {
                 extraColumns.classList.add('d-none'); // hide
-                button.textContent = 'Show';
+                button.textContent = 'Read More';
             }
         }
 
-
-
-        // Gallery Images Population
+        // Gallery Images 
         const categories = [
             { category: "Seafood", thumb: "images/seafood.png" },
             { category: "Beef", thumb: "images/beef.png" },
