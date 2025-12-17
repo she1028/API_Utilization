@@ -190,27 +190,26 @@
                     <a href="https://t.me/@She2804" class="nav-link1 fs-4 mx-2">
                         <i class="fab fa-telegram"></i>
                     </a>
-                    </div>
-                    <div class="col-lg-4 col-11">
-                        <div class="fs-3 fw-bold" style="color: plum;">Explore</div>
-                        <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
-                            <li><a class="nav-link1" aria-current="page" href="#home">Home</a></li>
-                            <li><a class="nav-link1" aria-current="page" href="search.html">Recipes</a></li>
-                            <li><a class="nav-link1" aria-current="page" href="#about">About</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-11">
-                        <img src="images/Main_logo.png" class="w-25">
-                        <div class="text-light text-left">
-                            <div>
-                                <hr class="mx-5" style="border: 1px solid white;">
-                                <div class="text-center pb-3" style="color: #676767;">&copy; 2025 Shella May Cuenca |
-                                    All
-                                    rights reserved.</div>
-                            </div>
+                </div>
+                <div class="col-lg-4 col-11">
+                    <div class="fs-3 fw-bold" style="color: plum;">Explore</div>
+                    <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                        <li><a class="nav-link1" aria-current="page" href="#home">Home</a></li>
+                        <li><a class="nav-link1" aria-current="page" href="search.html">Recipes</a></li>
+                        <li><a class="nav-link1" aria-current="page" href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-11">
+                    <img src="images/Main_logo.png" class="w-25">
+                    <div class="text-light text-left">
+                        <div>
+                            <hr class="mx-5" style="border: 1px solid white;">
+                            <div class="text-center pb-3" style="color: #676767;">&copy; 2025 Shella May Cuenca |
+                                All rights reserved.</div>
                         </div>
                     </div>
                 </div>
+            </div>
     </section>
 
     <script>
@@ -242,12 +241,17 @@
         const foodCategory = document.getElementById("foodCategory");
 
         function populateImages() {
-            const fullList = [...categories, ...categories, ...categories, ...categories, ...categories];
-            fullList.forEach(cat => {
-                const imgDiv = document.createElement('div');
-                imgDiv.innerHTML = `<img src="` + cat.thumb + `" alt="` + cat.category + `" class="foodImg">`;
-                foodCategory.appendChild(imgDiv);
-            });
+            for (let repeat = 0; repeat < 3; repeat++) {
+                // for (let i = 0; i < categories.length; i++) {
+                    const cat = categories[i];
+
+                    const imgDiv = document.createElement("div");
+                    imgDiv.innerHTML = `
+                <img src="`+ cat.thumb + `" alt="` + cat.category + `" class="foodImg">
+            `;
+                    foodCategory.appendChild(imgDiv);
+                // }
+            }
         }
 
         populateImages();
